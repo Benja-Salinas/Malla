@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Interactiva - Ing. Mecánica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header>
+        <h1>Malla Curricular Interactiva</h1>
+        <p>Ingeniería Civil Mecánica - PUCV</p>
+        <div class="leyenda">
+            <div><span class="caja-leyenda unlocked"></span> Disponible</div>
+            <div><span class="caja-leyenda approved"></span> Aprobado</div>
+            <div><span class="caja-leyenda locked"></span> Bloqueado</div>
+        </div>
+    </header>
+
+    <div class="malla-container">
+        <div class="semestre">
+            <h2>Año 1 / Sem. 1</h2>
+            <div class="ramo" data-ramo="Introducción a la Ingeniería Mecánica" data-requisito="">Introducción a la Ingeniería Mecánica</div>
+            <div class="ramo" data-ramo="Fundamentos de Matemáticas para Ingeniería" data-requisito="">Fundamentos de Matemáticas para Ingeniería</div>
+            <div class="ramo" data-ramo="Fundamentos de Física" data-requisito="">Fundamentos de Física</div>
+            <div class="ramo" data-ramo="Fundamentos de Química" data-requisito="">Fundamentos de Química</div>
+            <div class="ramo" data-ramo="Comunicación Efectiva y Desarrollo Profesional e Integral" data-requisito="">Comunicación Efectiva y Desarrollo Profesional e Integral</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 1 / Sem. 2</h2>
+            <div class="ramo" data-ramo="Dibujo para Mecánica" data-requisito="">Dibujo para Mecánica</div>
+            <div class="ramo" data-ramo="Cálculo Diferencial e Integral" data-requisito="Fundamentos de Matemáticas para Ingeniería">Cálculo Diferencial e Integral</div>
+            <div class="ramo" data-ramo="Física Mecánica" data-requisito="Fundamentos de Matemáticas para Ingeniería">Física Mecánica</div>
+            <div class="ramo" data-ramo="Laboratorio Física Mecánica" data-requisito="Fundamentos de Matemáticas para Ingeniería">Laboratorio Física Mecánica</div>
+            <div class="ramo" data-ramo="Antropología Cristiana" data-requisito="">Antropología Cristiana</div>
+            <div class="ramo" data-ramo="Formación Fundamental 1" data-requisito="">Formación Fundamental 1</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 2 / Sem. 1</h2>
+            <div class="ramo" data-ramo="Estadística Aplicada" data-requisito="Fundamentos de Matemáticas para Ingeniería">Estadística Aplicada</div>
+            <div class="ramo" data-ramo="Cálculo en Varias Variables" data-requisito="Cálculo Diferencial e Integral">Cálculo en Varias Variables</div>
+            <div class="ramo" data-ramo="Álgebra Lineal" data-requisito="Cálculo Diferencial e Integral">Álgebra Lineal</div>
+            <div class="ramo" data-ramo="Ciencia de los Materiales" data-requisito="Fundamentos de Química">Ciencia de los Materiales</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 2 / Sem. 2</h2>
+            <div class="ramo" data-ramo="Mediciones y Metrología" data-requisito="Estadística Aplicada">Mediciones y Metrología</div>
+            <div class="ramo" data-ramo="Ecuaciones Diferenciales" data-requisito="Cálculo en Varias Variables">Ecuaciones Diferenciales</div>
+            <div class="ramo" data-ramo="Estática" data-requisito="Cálculo en Varias Variables,Física Mecánica">Estática</div>
+            <div class="ramo" data-ramo="Materiales para Ingeniería" data-requisito="Ciencia de los Materiales">Materiales para Ingeniería</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 3 / Sem. 1</h2>
+            <div class="ramo" data-ramo="Ecuaciones Diferenciales Parciales" data-requisito="Ecuaciones Diferenciales">Ecuaciones Diferenciales Parciales</div>
+            <div class="ramo" data-ramo="Dinámica" data-requisito="Estática">Dinámica</div>
+            <div class="ramo" data-ramo="Termodinámica 1" data-requisito="Cálculo en Varias Variables,Fundamentos de Química">Termodinámica 1</div>
+            <div class="ramo" data-ramo="Inglés 1" data-requisito="">Inglés 1</div>
+            <div class="ramo" data-ramo="Formación Fundamental 2" data-requisito="">Formación Fundamental 2</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 3 / Sem. 2</h2>
+            <div class="ramo" data-ramo="Procesos de Fabricación 1" data-requisito="Ciencia de los Materiales">Procesos de Fabricación 1</div>
+            <div class="ramo" data-ramo="Lenguaje de Programación y Métodos Numéricos" data-requisito="Ecuaciones Diferenciales">Lenguaje de Programación y Métodos Numéricos</div>
+            <div class="ramo" data-ramo="Mecánica de los Fluidos" data-requisito="Termodinámica 1,Ecuaciones Diferenciales Parciales">Mecánica de los Fluidos</div>
+            <div class="ramo" data-ramo="Inglés 2" data-requisito="Inglés 1">Inglés 2</div>
+            <div class="ramo" data-ramo="Formación Fundamental 3" data-requisito="">Formación Fundamental 3</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 4 / Sem. 1</h2>
+            <div class="ramo" data-ramo="Procesos de Fabricación 2" data-requisito="Procesos de Fabricación 1">Procesos de Fabricación 2</div>
+            <div class="ramo" data-ramo="Mecánica de Materiales" data-requisito="Ciencia de los Materiales">Mecánica de Materiales</div>
+            <div class="ramo" data-ramo="Termodinámica 2" data-requisito="Mecánica de los Fluidos">Termodinámica 2</div>
+            <div class="ramo" data-ramo="Inglés 3" data-requisito="Inglés 2">Inglés 3</div>
+            <div class="ramo" data-ramo="Ética Cristiana" data-requisito="">Ética Cristiana</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 4 / Sem. 2</h2>
+            <div class="ramo" data-ramo="Vibraciones Mecánicas" data-requisito="Mecánica de Materiales,Ecuaciones Diferenciales Parciales">Vibraciones Mecánicas</div>
+            <div class="ramo" data-ramo="Electrotecnia" data-requisito="">Electrotecnia</div>
+            <div class="ramo" data-ramo="Elementos de Máquinas" data-requisito="Mecánica de Materiales">Elementos de Máquinas</div>
+            <div class="ramo" data-ramo="Transferencia de Calor" data-requisito="Termodinámica 2">Transferencia de Calor</div>
+            <div class="ramo" data-ramo="Inglés 4" data-requisito="Inglés 3">Inglés 4</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 5 / Sem. 1</h2>
+            <div class="ramo" data-ramo="Evaluación de Proyectos" data-requisito="">Evaluación de Proyectos</div>
+            <div class="ramo" data-ramo="Análisis de Fallas y Monitoreo de Condiciones" data-requisito="Materiales para Ingeniería">Análisis de Fallas y Monitoreo de Condiciones</div>
+            <div class="ramo" data-ramo="Automatización y Control" data-requisito="Electrotecnia">Automatización y Control</div>
+            <div class="ramo" data-ramo="Modelación Mecánica" data-requisito="Transferencia de Calor,Mecánica de Materiales">Modelación Mecánica</div>
+            <div class="ramo" data-ramo="Turbomáquinas" data-requisito="Transferencia de Calor">Turbomáquinas</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 5 / Sem. 2</h2>
+            <div class="ramo" data-ramo="Herramientas de Gestión de la Producción" data-requisito="">Herramientas de Gestión de la Producción</div>
+            <div class="ramo" data-ramo="Optimización e Ingeniería de Plantas" data-requisito="">Optimización e Ingeniería de Plantas</div>
+            <div class="ramo" data-ramo="Diseño Mecánico" data-requisito="Modelación Mecánica">Diseño Mecánico</div>
+            <div class="ramo" data-ramo="Proyecto de Titulación 1" data-requisito="">Proyecto de Titulación 1</div>
+            <div class="ramo" data-ramo="Electivo de especialidad 1" data-requisito="">Electivo de especialidad 1</div>
+            <div class="ramo" data-ramo="Electivo de especialidad 2" data-requisito="">Electivo de especialidad 2</div>
+        </div>
+        <div class="semestre">
+            <h2>Año 6 / Sem. 1</h2>
+            <div class="ramo" data-ramo="Administración de RR.HH" data-requisito="">Administración de RR.HH</div>
+            <div class="ramo" data-ramo="Gestión de Activos y Confiabilidad" data-requisito="Análisis de Fallas y Monitoreo de Condiciones">Gestión de Activos y Confiabilidad</div>
+            <div class="ramo" data-ramo="Proyecto de Ingeniería" data-requisito="Optimización e Ingeniería de Plantas">Proyecto de Ingeniería</div>
+            <div class="ramo" data-ramo="Proyecto de Titulación 2" data-requisito="Proyecto de Titulación 1">Proyecto de Titulación 2</div>
+            <div class="ramo" data-ramo="Electivo de especialidad 3" data-requisito="">Electivo de especialidad 3</div>
+            <div class="ramo" data-ramo="Electivo de especialidad 4" data-requisito="">Electivo de especialidad 4</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
